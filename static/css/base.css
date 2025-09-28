@@ -1,0 +1,12 @@
+
+
+header h1 a {
+    color: crimson;
+}
+
+header {
+    background: rgba(240, 240, 240);
+    padding: 40px 20px;
+    border-bottom: 1px solid #3f3f3f;
+    margin-bottom: 5px;
+}

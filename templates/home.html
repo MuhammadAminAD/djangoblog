@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Muhammad Amin Abduxalilov</h1>
+
+    <ul>
+        {% for post in object_list %}
+            <li>
+                <a href="{% url 'post_item' post.pk %}">{{ post.title }}</a>
+                <p>{{ post.body | slice:":100" }}...</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
