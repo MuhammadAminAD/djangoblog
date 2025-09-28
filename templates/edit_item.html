@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>edit text</h1>
-    <form action="" method="post">{{ csrf_token }}
+    <form action="" method="post">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Yangilash</button>
     </form>
